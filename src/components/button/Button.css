@@ -23,10 +23,8 @@
     background: linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%); 
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: 360px) {
     .btn-contact {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      font-size: 13;
     }  
   }
