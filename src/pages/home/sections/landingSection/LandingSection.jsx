@@ -20,7 +20,18 @@ const LandingSection = () => {
           </p>
           <div className="my-button">
             <ButtonContact btn_title="Contact With Me" />
-            <ButtonContact btn_title="My resume" variant="outline" />
+            <ButtonContact
+              btn_title="My resume"
+              variant="outline"
+              OnClick={() => {
+                const link = document.createElement("a");
+                link.href = "/assets/AlaaCV.pdf";
+                link.download = "AlaaCV.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            />
           </div>
         </Col>
         <Col sm={4}>
