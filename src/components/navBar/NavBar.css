@@ -1,0 +1,108 @@
+.logo {
+  font-size: 24px !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+  text-shadow: 0 0 10px rgba(196, 63, 166, 0.5);
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: white !important;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+  }
+  
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+  
+  .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .btn-contact {
+    background: linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 15px;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-contact:hover {
+    box-shadow: 0 0 10px #bf34be;
+  }
+
+  .navbar-toggler{
+    background: linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%) !important;
+    color: #fff !important;
+    border: none !important;
+    font-size: 1.5rem !important;
+  }
+
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* جعل جميع العناصر في المنتصف */
+      margin-top: 15px;
+      border-radius: 25px;
+      background-color: #000;
+    }
+  
+    .navbar-collapse .navbar-nav .nav-link {
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .btn-contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }  
+  }
+
+  @media (max-width: 1025px) {
+    .logo {
+      font-size: 20px !important;
+    }
+  }
+
+  @media (max-width: 385px) {
+    .logo {
+      font-size: 20px !important;
+    }
+    .navbar-toggler{
+      font-size: 1rem !important;
+    }
+  }
+
+  @media (max-width: 325px) {
+    .logo {
+      font-size: 16px !important;
+    }
+    .navbar-toggler{
+      font-size: 0.7rem !important;
+    }
+  }
