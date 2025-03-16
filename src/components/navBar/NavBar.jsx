@@ -2,6 +2,7 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import "./NavBar.css";
 import CustomContainer from "../container/Container";
+import ButtonContact from "../button/Button";
 
 const NavBar = () => {
   return (
@@ -9,10 +10,9 @@ const NavBar = () => {
       <Navbar
         expand="lg"
         className="bg-transparent"
-        style={{ marginBlock: "20px" }}
+        style={{ marginBottom: "20px" }}
       >
         <Navbar.Brand href="#" className="logo">
-          {/* Alaa Al-Faqawi */}
           <img src="/assets/logo.png" alt="Logo" style={{ width: "100px" }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -31,7 +31,7 @@ const NavBar = () => {
               Services
             </Nav.Link>
           </Nav>
-          <button className="btn-contact">Contact With Me</button>
+          <ButtonContact btn_title="Contact With Me" />
         </Navbar.Collapse>
       </Navbar>
     </CustomContainer>

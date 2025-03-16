@@ -1,0 +1,32 @@
+.btn-contact {
+    background: linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 15px;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-contact:hover {
+    box-shadow: 0 0 10px #bf34be;
+  }
+
+  .outline {
+    background: none;
+    border: 2px solid #fff;
+  }
+
+  .outline:hover {
+    border: 2px solid #bf34be;
+    background: linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%); 
+  }
+
+  @media (max-width: 991px) {
+    .btn-contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }  
+  }
