@@ -43,6 +43,7 @@
 @media (max-width: 991px) {
     .landing {
         flex-direction: column-reverse;
+        gap: 30px;
     }
     .my-name {
         font-size: 30px;
