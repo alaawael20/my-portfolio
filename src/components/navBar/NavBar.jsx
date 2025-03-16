@@ -12,7 +12,8 @@ const NavBar = () => {
         style={{ marginBlock: "20px" }}
       >
         <Navbar.Brand href="#" className="logo">
-          Alaa Al-Faqawi
+          {/* Alaa Al-Faqawi */}
+          <img src="/assets/logo.png" alt="Logo" style={{ width: "100px" }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
