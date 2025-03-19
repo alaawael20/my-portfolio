@@ -1,0 +1,13 @@
+.title {
+    font-size: 50px;
+    text-align: center;
+    margin-block: 15px;
+}
+
+.title span {
+    font-weight: bold;
+    background: linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}

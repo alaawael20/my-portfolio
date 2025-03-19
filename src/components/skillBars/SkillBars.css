@@ -1,0 +1,50 @@
+.progress-gradient .progress-bar {
+  background: linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+.text-end p {
+  font-size: 14px;
+}
+
+.progress-gradient .progress-bar {
+  height: 6px;
+}
+
+.progress-bar {
+  border-radius: 3px;
+}
+
+.container {
+  padding: 2rem;
+}
+}
+
+@media (max-width: 575px) {
+.text-end p {
+  font-size: 12px;
+}
+
+.progress-gradient .progress-bar {
+  height: 5px;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+}
+
+@media (min-width: 1200px) {
+.text-end p {
+  font-size: 18px;
+}
+
+.progress-gradient .progress-bar {
+  height: 10px;
+}
+
+.progress-bar {
+  border-radius: 8px;
+}
+}

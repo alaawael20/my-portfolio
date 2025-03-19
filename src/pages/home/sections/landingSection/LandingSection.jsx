@@ -10,7 +10,7 @@ const LandingSection = () => {
       <Row className="landing">
         <Col sm={8}>
           <h2 className="my-name">
-            <span>I'm Alaa Al-faqawi,</span> a Software Engineer with a passion
+            <span>I'm Alaa Al-faqawi,</span> A Software Engineer with a passion
             for building.
           </h2>
           <p className="my-description">
