@@ -21,7 +21,7 @@ const NavBar = () => {
             <Nav.Link href="#action1" style={{ marginRight: "50px" }}>
               Home
             </Nav.Link>
-            <Nav.Link href="#action2" style={{ marginRight: "50px" }}>
+            <Nav.Link href="#about" style={{ marginRight: "50px" }}>
               About Me
             </Nav.Link>
             <Nav.Link href="#action3" style={{ marginRight: "50px" }}>
