@@ -1,27 +1,32 @@
 export const services = [
   {
     id: 1,
-    service:
-      "UI/UX design and development using HTML, CSS, Bootstrap, JavaScript, React.js",
+    title: "Convert Designs to Code",
+    description: "Transform Figma or PSD into HTML and CSS.",
   },
   {
     id: 2,
-    service:
-      "Convert designs (Figma, Adobe XD, PSD) into responsive HTML and CSS code",
+    title: "Develop Interactive Web Apps",
+    description: "Build fast and dynamic React.js applications.",
   },
   {
     id: 3,
-    service:
-      "Optimize website performance and speed (SEO, load time improvement, code and image compression)",
+    title: "Add Dynamic Features",
+    description: "Implement forms, search, filtering, and data validation.",
   },
   {
     id: 4,
-    service:
-      "Add interactive effects and animations (Animations, Transitions, GSAP, Framer Motion)",
+    title: "Search Engine Optimization (SEO)",
+    description: "Improve website ranking on search engines.",
   },
-  { id: 5, service: "Build fully responsive landing pages" },
+  {
+    id: 5,
+    title: "API Integration",
+    description: "Fetch and send data using Fetch or Axios.",
+  },
   {
     id: 6,
-    service: "Fix bugs and update old websites (Debugging & Code Refactoring)",
+    title: "Website Performance Optimization",
+    description: "Enhance loading speed and overall efficiency.",
   },
 ];
