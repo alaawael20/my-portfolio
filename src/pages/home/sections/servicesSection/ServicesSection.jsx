@@ -11,7 +11,7 @@ const ServicesSection = () => {
         <TitleSection title="Services" />
         <Row>
           {services.map((service) => (
-            <Col key={service.id} md={4}>
+            <Col md={4}>
               <ServiceCard
                 id={service.id}
                 title={service.title}

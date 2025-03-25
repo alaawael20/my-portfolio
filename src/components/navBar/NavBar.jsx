@@ -18,7 +18,7 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="mx-auto my-2 my-lg-0">
-            <Nav.Link href="#action1" style={{ marginRight: "50px" }}>
+            <Nav.Link href="/" style={{ marginRight: "50px" }}>
               Home
             </Nav.Link>
             <Nav.Link href="#about" style={{ marginRight: "50px" }}>
@@ -27,7 +27,7 @@ const NavBar = () => {
             <Nav.Link href="#services" style={{ marginRight: "50px" }}>
               Services
             </Nav.Link>
-            <Nav.Link href="#action3" style={{ marginRight: "50px" }}>
+            <Nav.Link href="#works" style={{ marginRight: "50px" }}>
               My Works
             </Nav.Link>
           </Nav>
