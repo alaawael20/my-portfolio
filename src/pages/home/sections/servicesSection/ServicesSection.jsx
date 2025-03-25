@@ -6,20 +6,22 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const ServicesSection = () => {
   return (
-    <Container>
-      <TitleSection title="Services" />
-      <Row className="g-4">
-        {services.map((service) => (
-          <Col key={service.id} md={4}>
-            <ServiceCard
-              id={service.id}
-              title={service.title}
-              description={service.description}
-            />
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <div id="services">
+      <Container>
+        <TitleSection title="Services" />
+        <Row>
+          {services.map((service) => (
+            <Col key={service.id} md={4}>
+              <ServiceCard
+                id={service.id}
+                title={service.title}
+                description={service.description}
+              />
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </div>
   );
 };
 

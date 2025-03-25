@@ -1,4 +1,4 @@
-.serviceCard {
+.container .serviceCard {
     margin-block: 30px;
     background: transparent;
     border: 1px solid #fff;
@@ -6,22 +6,22 @@
     height: 180px;
 }
 
-.mainTitle {
+.container .serviceCard .mainTitle {
     font-size: 25px;
     font-weight: bold;
     color: #fff;
 }
 
-.subTitle {
+.container .serviceCard .subTitle {
     display: inline-block;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     background: linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.cardDescription {
+.container .serviceCard .cardDescription {
     font-size: 15px;
     color: #fff;
 }
