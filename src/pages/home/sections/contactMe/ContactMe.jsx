@@ -1,14 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./ContactMe.css";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import TitleSection from "./../../../../components/titleSection/TitleSection";
 import ButtonContact from "../../../../components/button/Button";
+import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {
+  const form = useRef();
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "Alaa@wael123",
+        "template_jkf5g0a",
+        form.current,
+        "SZYqL0yCVIY7iVxsC"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Your message has been sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          alert("Failed to send the message. Please try again later.");
+        }
+      );
   };
+
   return (
     <div id="contact">
       <Container>
@@ -43,7 +66,7 @@ const ContactMe = () => {
           </Col>
 
           <Col md={7}>
-            <Form onSubmit={handleSubmit} className="contact-form">
+            <Form ref={form} onSubmit={handleSubmit} className="contact-form">
               <Form.Group controlId="formName">
                 <Form.Label>Your Name</Form.Label>
                 <Form.Control
