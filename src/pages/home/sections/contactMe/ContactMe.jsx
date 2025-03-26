@@ -22,12 +22,10 @@ const ContactMe = () => {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
-          alert("Your message has been sent successfully!");
           form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error);
-          alert("Failed to send the message. Please try again later.");
         }
       );
   };
