@@ -10,9 +10,14 @@ const WorkSection = () => {
     <div id="works" style={{ marginBlock: "20px" }}>
       <CustomContainer>
         <TitleSection title="My Works" />
-        <Row>
+        <Row className="justify-content-center">
           {works.map((work) => (
-            <Col md={4}>
+            <Col
+              lg={4}
+              md={6}
+              sm={12}
+              className="d-flex justify-content-center"
+            >
               <WorkCard
                 key={work.id}
                 project={work.project}
