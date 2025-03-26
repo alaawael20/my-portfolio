@@ -4,6 +4,9 @@ import LandingSection from "./sections/landingSection/LandingSection";
 import AboutSection from "./sections/aboutSection/AboutSection";
 import ServicesSection from "./sections/servicesSection/ServicesSection";
 import WorkSection from "./sections/worksSection/WorkSection";
+import ScrollToUp from "../../components/scrollToUp/ScrollToUp";
+import ContactMe from "./sections/contactMe/ContactMe";
+import Footer from "../../components/footer/Footer";
 
 const HomePage = () => {
   return (
@@ -13,6 +16,9 @@ const HomePage = () => {
       <AboutSection />
       <ServicesSection />
       <WorkSection />
+      <ContactMe />
+      <Footer />
+      <ScrollToUp />
     </div>
   );
 };

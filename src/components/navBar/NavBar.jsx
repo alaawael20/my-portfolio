@@ -31,7 +31,7 @@ const NavBar = () => {
               My Works
             </Nav.Link>
           </Nav>
-          <ButtonContact btn_title="Contact With Me" />
+          <ButtonContact btn_title="Contact With Me" sectionId="contact" />
         </Navbar.Collapse>
       </Navbar>
     </CustomContainer>

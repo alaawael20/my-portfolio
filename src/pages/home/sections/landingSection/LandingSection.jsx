@@ -19,7 +19,7 @@ const LandingSection = () => {
             solutions.
           </p>
           <div className="my-button">
-            <ButtonContact btn_title="Contact With Me" />
+            <ButtonContact btn_title="Contact With Me" sectionId="contact" />
             <ButtonContact
               btn_title="My resume"
               variant="outline"

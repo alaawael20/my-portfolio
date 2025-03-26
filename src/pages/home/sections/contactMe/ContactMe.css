@@ -1,0 +1,41 @@
+.contactSection {
+    margin-block: 30px;
+    color: #fff;
+}
+
+.contactSection .highlight {
+    font-weight: bold;
+    background: linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contactSection .formText {
+    background-color: #32323c;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    transition: none;
+}
+
+/* عند التركيز على الحقل */
+.contactSection .formText:focus {
+    background-color: #32323c;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+}
+
+.contactSection .formText::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contactSection .formText:-webkit-autofill,
+.contactSection .formText:-webkit-autofill:hover, 
+.contactSection .formText:-webkit-autofill:focus {
+    -webkit-text-fill-color: white;
+    box-shadow: 0 0 0px 1000px #32323c inset !important;
+}
