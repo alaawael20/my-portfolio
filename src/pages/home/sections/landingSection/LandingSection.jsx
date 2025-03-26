@@ -23,7 +23,7 @@ const LandingSection = () => {
             <ButtonContact
               btn_title="My resume"
               variant="outline"
-              OnClick={() => {
+              onClick={() => {
                 const link = document.createElement("a");
                 link.href = "/assets/AlaaCV.pdf";
                 link.download = "AlaaCV.pdf";
