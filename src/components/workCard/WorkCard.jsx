@@ -10,7 +10,7 @@ const WorkCard = ({ project, live, workImage }) => {
         <img src={workImage} alt="AlaaPicture" className="workImage" />
         <div className="cardBody">
           <h5 className="cardTitle">{project}</h5>
-          <a href={live}>
+          <a href={live} target="_blank" rel="noopener noreferrer">
             <ButtonContact btn_title="Live Demo" />
           </a>
         </div>

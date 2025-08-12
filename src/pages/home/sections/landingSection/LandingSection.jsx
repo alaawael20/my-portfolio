@@ -36,7 +36,7 @@ const LandingSection = () => {
         </Col>
         <Col sm={4}>
           <img
-            src="/assets/myPicture.jpg"
+            src="/assets/myPicture2.jpg"
             alt="My-Picture"
             className="my-picture"
           />
